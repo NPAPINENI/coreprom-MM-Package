@@ -1,10 +1,8 @@
 # install_r_deps.R
-# Run this once after cloning the repo:
-# Rscript install_r_deps.R
 
 # ── Python: rpy2 ──────────────────────────────────────────────────────────────
 message("Installing rpy2...")
-system("python -m pip install rpy2==3.5.16 --only-binary=:all: || python -m pip install rpy2==3.4.5 --only-binary=:all:")
+system("python -m pip install rpy2 --only-binary=:all:")
 
 # ── R packages ────────────────────────────────────────────────────────────────
 lib <- path.expand("~/R/library")
