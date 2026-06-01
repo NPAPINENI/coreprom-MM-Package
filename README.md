@@ -17,6 +17,7 @@ python -m pip install git+https://github.com/NPAPINENI/coreprom-MM-Package.git
 
 ### Step 2 — Install R dependencies
 git clone https://github.com/NPAPINENI/coreprom-MM-Package.git
+
 Rscript coreprom-MM-Package/install_r_deps.R
 
 ### Step 4 — Run
