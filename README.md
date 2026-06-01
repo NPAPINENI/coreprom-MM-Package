@@ -12,13 +12,21 @@ Python >= 3.8
 Anaconda or Miniconda
 R >= 4.0 installed and accessible via the R command
 
-### 1. Install Python package
+### Step 1 — Install the package
 python -m pip install git+https://github.com/NPAPINENI/coreprom-MM-Package.git
 
-### 2. Install R dependencies if needed by cloning
+### Step 2 — Install rpy2 pre-built wheel (avoids compilation issues)
+python -m pip install rpy2==3.5.16 --only-binary=:all:
+or
+python -m pip install rpy2==3.4.5 --only-binary=:all:
+
+### Step 3 — Install R dependencies
 git clone https://github.com/NPAPINENI/coreprom-MM-Package.git
-cd 
-Rscript install_r_deps.R
+Rscript coreprom-MM-Package/install_r_deps.R
+
+### Step 4 — Run
+coreprom-props Promoter input.tsv ./output/
+
 
 ### 3. Run
 coreprom-props Promoter input.tsv ./output/   (input tsv file should have columns: DNA Sequence and label)
