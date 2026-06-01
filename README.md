@@ -15,12 +15,7 @@ R >= 4.0 installed and accessible via the R command
 ### Step 1 — Install the package
 python -m pip install git+https://github.com/NPAPINENI/coreprom-MM-Package.git
 
-### Step 2 — Install rpy2 pre-built wheel (avoids compilation issues)
-python -m pip install rpy2==3.5.16 --only-binary=:all:
-or
-python -m pip install rpy2==3.4.5 --only-binary=:all:
-
-### Step 3 — Install R dependencies
+### Step 2 — Install R dependencies
 git clone https://github.com/NPAPINENI/coreprom-MM-Package.git
 Rscript coreprom-MM-Package/install_r_deps.R
 
