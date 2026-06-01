@@ -1,5 +1,5 @@
-# A command-line pipeline to generate DNABERT-CorePromMM sequence properties and shape features  from a labeled promoter TSV.
-## Developed by the Davuluri Lab, Stony Brook University.
+## A command-line pipeline to generate DNABERT-CorePromMM sequence properties and shape features  from a labeled promoter TSV.
+### Developed by the Davuluri Lab, Stony Brook University.
 
 ### Given a TSV file with DNA sequences and labels, this pipeline:
 1. Generates 6-mer tokenized sequences (sliding window = 1)
@@ -13,7 +13,11 @@ Python >= 3.8
 Anaconda or Miniconda
 R >= 4.0 installed and accessible via the R command
 
-### step 1
+### 1. Install Python package
 python -m pip install git+https://github.com/NPAPINENI/coreprom-MM-Package.git
 
-pip install git+https://github.com/NPAPINENI/coreprom-MM-Package.git
+### 2. Install R dependencies
+Rscript install_r_deps.R
+
+### 3. Run
+coreprom-props Promoter input.tsv ./output/   (input tsv file should have columns: DNA Sequence and label)
