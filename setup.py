@@ -9,7 +9,6 @@ setup(
         "numpy",
         "pandas",
         "scikit-learn",
-        "rpy2==3.5.16",
     ],
     entry_points={
         "console_scripts": [
