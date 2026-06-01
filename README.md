@@ -1,5 +1,5 @@
 ## A command-line pipeline to generate DNABERT-CorePromMM sequence properties and shape features  from a labeled promoter TSV.
-### Developed by the Davuluri Lab, Stony Brook University.
+#### Developed by the Davuluri Lab, Stony Brook University.
 
 ### Given a TSV file with DNA sequences and labels, this pipeline:
 1. Generates 6-mer tokenized sequences (sliding window = 1)
