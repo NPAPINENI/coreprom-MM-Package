@@ -25,8 +25,4 @@ git clone https://github.com/NPAPINENI/coreprom-MM-Package.git
 Rscript coreprom-MM-Package/install_r_deps.R
 
 ### Step 4 — Run
-coreprom-props Promoter input.tsv ./output/
-
-
-### 3. Run
-coreprom-props Promoter input.tsv ./output/   (input tsv file should have columns: DNA Sequence and label)
+coreprom-props Promoter input.tsv ./output/  (input tsv file should have columns: DNA Sequence and label)
