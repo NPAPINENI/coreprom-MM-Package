@@ -1,7 +1,3 @@
-# install_r_deps.R
-# Run this once after installing the Python package:
-# Rscript install_r_deps.R
-
 lib <- path.expand("~/R/library")
 dir.create(lib, recursive=TRUE, showWarnings=FALSE)
 
