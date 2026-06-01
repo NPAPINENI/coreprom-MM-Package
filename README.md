@@ -15,7 +15,8 @@ R >= 4.0 installed and accessible via the R command
 ### 1. Install Python package
 python -m pip install git+https://github.com/NPAPINENI/coreprom-MM-Package.git
 
-### 2. Install R dependencies
+### 2. Install R dependencies if needed by cloning
+git clone https://github.com/NPAPINENI/coreprom-MM-Package.git
 Rscript install_r_deps.R
 
 ### 3. Run
